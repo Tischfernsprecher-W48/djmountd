@@ -1,0 +1,14 @@
+[Unit]
+Description=djmount
+After=network.target
+
+[Service]
+User=root
+Group=root
+ExecStart=/usr/bin/djmount /mnt
+
+[Install]
+WantedBy=multi-user.target
+
+
+
